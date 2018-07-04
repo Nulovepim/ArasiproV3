@@ -8,7 +8,7 @@ import time, random, sys, json, codecs, threading, glob, re, string, os, request
 from gtts import gTTS
 from googletrans import Translator
 botStart = time.time()
-cl = LINE("tfcis20@gmail.com", "e27676271")
+cl = LINE("susu76917@gmail.com", "nunu_2018")
 cl.log("Auth Token : " + str(cl.authToken))
 print ("====Ykino登入成功====")
 kl = LINE("yukino0038@gmail.com", "e27676271")
