@@ -11,24 +11,24 @@ botStart = time.time()
 cl = LINE("")
 cl.log("Auth Token : " + str(cl.authToken))
 print ("====Ykino登入成功====")
-kl = LINE("yukino0038@gmail.com", "e27676271")
-kl.log("Auth Token : " + str(kl.authToken))
-print ("====雪乃登入成功====")
-sb = LINE("xyukino0039@gmail.com", "e27676271")
-sb.log("Auth Token : " + str(kl.authToken))
-print ("====Saber登入成功====")
-kt = LINE("arasi27676271@gmail.com", "e27676271")
-kt.log("Auth Token : " + str(kl.authToken))
-print ("====Kirito登入成功====")
-sa = LINE("xyukino0041@gmail.com", "e27676271")
-sa.log("Auth Token : " + str(kl.authToken))
-print ("====和泉登入成功====")
-oepoll = OEPoll(cl)
-readOpen = codecs.open("read.json","r","utf-8")
-settingsOpen = codecs.open("temp.json","r","utf-8")
-read = json.load(readOpen)
-settings = json.load(settingsOpen)
-myProfile = {
+#kl = LINE("yukino0038@gmail.com", "e27676271")
+#kl.log("Auth Token : " + str(kl.authToken))
+#print ("====雪乃登入成功====")
+#sb = LINE("xyukino0039@gmail.com", "e27676271")
+#sb.log("Auth Token : " + str(kl.authToken))
+#print ("====Saber登入成功====")
+#kt = LINE("arasi27676271@gmail.com", "e27676271")
+#kt.log("Auth Token : " + str(kl.authToken))
+#print ("====Kirito登入成功====")
+#sa = LINE("xyukino0041@gmail.com", "e27676271")
+#sa.log("Auth Token : " + str(kl.authToken))
+#print ("====和泉登入成功====")
+#oepoll = OEPoll(cl)
+#readOpen = codecs.open("read.json","r","utf-8")
+#settingsOpen = codecs.open("temp.json","r","utf-8")
+#read = json.load(readOpen)
+#settings = json.load(settingsOpen)
+#myProfile = {
 	"displayName": "",
 	"statusMessage": "",
 	"pictureStatus": ""
@@ -36,17 +36,17 @@ myProfile = {
 lineSettings = cl.getSettings()
 clProfile = cl.getProfile()
 clMID = cl.profile.mid
-klMID = kl.profile.mid
-ktMID = kt.profile.mid
-saMID = sa.profile.mid
-sbMID = sb.profile.mid
+#klMID = kl.profile.mid
+#ktMID = kt.profile.mid
+#saMID = sa.profile.mid
+#sbMID = sb.profile.mid
 try:
     settings['bot'] = {}
     settings["bot"][clMID] = True
-    settings["bot"][klMID] = True
-    settings["bot"][ktMID] = True
-    settings["bot"][saMID] = True
-    settings["bot"][sbMID] = True
+    #settings["bot"][klMID] = True
+    #settings["bot"][ktMID] = True
+    #settings["bot"][saMID] = True
+    #settings["bot"][sbMID] = True
     backupData()
     print ("設置bot清單成功")
 except:
