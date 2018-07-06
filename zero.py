@@ -8,7 +8,7 @@ from humanfriendly import format_timespan, format_size, format_number, format_le
 from gtts import gTTS
 from googletrans import Translator
 botStart = time.time()
-cl = LINE("")
+cl = LINE('bot3nu2018@gmail.com','nunu_kap2018")
 cl.log("Auth Token : " + str(cl.authToken))
 print ("====Ykino登入成功====")
 #kl = LINE("yukino0038@gmail.com", "e27676271")
